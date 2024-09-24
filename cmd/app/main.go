@@ -21,7 +21,7 @@ func main() {
 		log.Fatal("PORT is not found in enviroment")
 	}
 	// Serve static files (React build)
-	fs := http.FileServer(http.Dir("./frontend/build"))
+	fs := http.FileServer(http.Dir("./ui/build"))
 	http.Handle("/", fs)
 	log.Printf("Server is running on port %v", port)
 	server := &http.Server{

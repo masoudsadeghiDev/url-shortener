@@ -1,38 +1,125 @@
+/* General App Styles */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 40px;
   color: white;
 }
 
-.App-link {
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  color: #61dafb;
+}
+
+.url-shortener-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.url-input {
+  padding: 12px;
+  width: 400px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.shorten-btn {
+  background-color: #61dafb;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shorten-btn:hover {
+  background-color: #21a1f1;
+}
+
+.result-section {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.result-section a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.result-section a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* CSV Upload Section */
+.csv-section {
+  margin-top: 30px;
+}
+
+.csv-section input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* People Cards Section */
+.people-list {
+  margin-top: 40px;
+}
+
+.people-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.person-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+}
+
+.person-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.person-card p {
+  font-size: 1.1rem;
+  color: #333;
 }
