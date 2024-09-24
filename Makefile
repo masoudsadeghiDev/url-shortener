@@ -1,5 +1,5 @@
 build-react:
-	cd frontend && npm install && npm run build
+	cd ui && npm install && npm run build
 
 build-go:
 	go build -o url-shortener cmd/app/main.go
