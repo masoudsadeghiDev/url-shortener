@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/masoudsadeghiDev/url-shortener/internal/routes"
+	"github.com/masoudsadeghiDev/url-shortener/internal/services/api/routes"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		log.Fatal("PORT is not found in enviroment")
+		log.Fatal("PORT is not found in environment")
 	}
 
 	router := routes.NewRoutes()
